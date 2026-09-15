@@ -46,7 +46,7 @@ A timestamp is used to limit the validity of an authentication response. In this
  
 [View Replay.py Code](codes/Replay.py)
  
-![Replay Attack Handling Output](Outputs/replay.png)
+![Replay Attack Handling Output](outputs/replay.png)
  
 ## Result 
  
