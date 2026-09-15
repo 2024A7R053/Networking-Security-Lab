@@ -10,4 +10,4 @@ This repository contains the laboratory work for the Network Security Lab.
 ## Experiments
 
 1. [Experiment 1: Implement and Analyze Classical Symmetric Ciphers](Experiment-1-Classical-Symmetric-Ciphers/)
-2. [Experiment 2: Generate SHA-256 Hash and Verify Data Integrity](Experiment-2-SHA-256-Hash-Data-Integrity/)
+2. [Experiment 2: Generate SHA-256 Hash and Verify Data Integrity](Experiment-2-SHA256-Data-Integrity/)
