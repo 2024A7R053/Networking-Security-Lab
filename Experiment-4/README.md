@@ -170,9 +170,6 @@ This confirmed that the certificate public key corresponds to the private key `t
 # Improvement: Certificate Expiration Testing
 
 ## Description
-
-# Improvement: Certificate Expiration Testing
-
 As an improvement to the basic experiment, **certificate expiration testing** was performed using OpenSSL.
 
 In the original procedure, the certificate was generated and verified normally. The improvement tests whether OpenSSL can detect a certificate after its validity period has expired.
