@@ -208,9 +208,6 @@ Contains the OpenSSL commands used throughout the experiment along with comments
 
 ### [`Certificate_expiration.sh`](Codes/certificate_expiration.sh)
 
-Contains the Bash script developed as the improvement to automate certificate validation.
-
----
 
 ## Output Files
 
@@ -236,7 +233,7 @@ The certificate was successfully inspected, its extensions and SHA-256 fingerpri
 
 The certificate public key was also confirmed to correspond to the generated private key.
 
-As an improvement, an automated Bash-based certificate validation tool was developed and successfully used to perform multiple certificate checks in a single execution.
+
 
 ---
 
