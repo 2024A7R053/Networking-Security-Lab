@@ -166,32 +166,38 @@ This confirmed that the certificate public key corresponds to the private key `t
 ![Step 6: Certificate verification and key matching](Outputs/ss6.jpeg)
 
 ---
-
-# Improvement: Automated Certificate Validation
+## Step 7: Certificate Verification and Expiration Testing
+# Improvement: Certificate Expiration Testing
 
 ## Description
 
-As an improvement to the basic experiment, a Bash-based **X.509 Certificate Validation Tool** was developed.
+# Improvement: Certificate Expiration Testing
 
-In the original procedure, different certificate properties were checked individually using separate OpenSSL commands. The improvement automates multiple checks in a single execution.
+As an improvement to the basic experiment, **certificate expiration testing** was performed using OpenSSL.
 
-The validation script checks:
+In the original procedure, the certificate was generated and verified normally. The improvement tests whether OpenSSL can detect a certificate after its validity period has expired.
 
-1. Certificate file availability
-2. Private key availability
-3. Certificate validity
-4. Self-signed status
-5. CA constraint
-6. Subject Alternative Name
-7. Private key and certificate matching
+The expiration testing includes:
 
-The improvement makes the validation process more systematic, repeatable, and easier to perform.
+1. Checking the certificate validity dates
+2. Verifying the certificate normally
+3. Testing the certificate at a future time
+4. Checking whether OpenSSL detects the expired certificate
+
+The certificate validity period was:
+
+```text
+notBefore=Sep 23 17:12:33 2026 GMT
+notAfter=Sep 23 17:12:33 2027 GMT
+
+```
+
 
 The script is available in the `Codes` folder as:
 
-**`Validate_certificate.sh`**
+**`Certificate_expiration.sh`**
 
-![Step 7: Automated certificate validation](Outputs/ss7.jpeg)
+![Step 7: Certificate Expiration](Outputs/ss7.jpeg)
 
 ---
 
