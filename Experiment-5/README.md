@@ -74,7 +74,7 @@ The ClientHello and ServerHello messages demonstrated how the client and server 
 
 ## 6. Improvements
 
-Extended the experiment by comparing two TLS handshakes based on negotiated TLS version, cipher suite, key-share group, ALPN protocol, and certificate issuer. This comparative analysis helped identify differences in security parameters and communication protocols between HTTPS connections.
+Extended the experiment by analyzing the TLS handshake completion time and identifying the sequence of handshake messages in Wireshark. This helped understand how the handshake process establishes a secure connection and how connection setup time affects communication performance.
 
 ## 7. Conclusion
 
