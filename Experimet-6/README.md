@@ -99,7 +99,7 @@ The server's username, hostname, IP address, and SSH host-key fingerprint were a
 
 The Ubuntu-side commands are documented in [`server_commands.sh`](Codes/Server_commands.sh).
 
-![Step 2: Install and Configure the SSH Server](Outputs/ss2.png)
+![Step 2: Install and Configure the SSH Server](Outputs/ss2.png.png)
 
 ---
 
