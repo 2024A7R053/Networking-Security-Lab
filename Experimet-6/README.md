@@ -77,7 +77,7 @@ The installed OpenSSH client on Kali Linux was checked using:
 
 The command displayed the installed SSH client version and confirmed that the client utility was available.
 
-![Step 1: SSH client version check](Outputs/ss1.png)
+![Step 1: SSH client version check](Outputs/ss1.png.png)
 
 ---
 
@@ -111,7 +111,7 @@ The Kali Linux client was used to connect to the Ubuntu server using:
 
 After verifying the server's host-key fingerprint, the Ubuntu account password was entered to establish the remote shell.
 
-![Step 3: Password-based SSH connection](Outputs/ss3.1.png)
+![Step 3: Password-based SSH connection](Outputs/ss3.1.png.png)
 
 ---
 
@@ -125,9 +125,9 @@ Inside the SSH session, the following commands were executed:
 
 These commands verified that the SSH session provided access to the intended remote system. The `exit` command was then used to return to Kali Linux.
 
-![Step 4: Verify the Remote Shell](Outputs/ss3.2.png)
+![Step 4: Verify the Remote Shell](Outputs/ss3.2.png.png)
 
-![Step 4: Verify the Remote Shell](Outputs/ss4.png)
+![Step 4: Verify the Remote Shell](Outputs/ss4.png.png)
 
 ---
 
@@ -149,7 +149,7 @@ The client's public-key fingerprint was examined using:
 
 These commands were used to inspect the generated key files and identify the client's public key by its fingerprint.
 
-![Step 5: SSH key pair generation](Outputs/ss5.1.png)
+![Step 5: SSH key pair generation](Outputs/ss5.1.png.png)
 
 ---
 
@@ -167,7 +167,7 @@ The public key was then transferred to the Ubuntu account using:
 
 This command added the public key to the account's `authorized_keys` file, allowing the server to authorize authentication using the corresponding private key.
 
-![Step 6: SSH key permission configuration and public-key installation](Outputs/ss5.2.png)
+![Step 6: SSH key permission configuration and public-key installation](Outputs/ss5.2.png.png)
 
 ---
 
@@ -184,7 +184,7 @@ Inside the remote shell, the following commands were executed:
 
 The `exit` command was then used to return to Kali Linux.
 
-![Step 7: Public-key authentication test](Outputs/ss6.png)
+![Step 7: Public-key authentication test](Outputs/ss6.png.png)
 
 The SSH agent was started using:
 
@@ -200,7 +200,7 @@ A subsequent SSH connection was established using:
 
 The `exit` command was used to terminate the remote session and return to Kali Linux.
 
-![Step 7: SSH agent and subsequent connection](Outputs/ss7.png)
+![Step 7: SSH agent and subsequent connection](Outputs/ss7.png.png)
 
 ---
 
