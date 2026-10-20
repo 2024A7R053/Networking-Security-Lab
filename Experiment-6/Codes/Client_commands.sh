@@ -8,7 +8,7 @@
 ssh -V
 
 # Step 2: Connect to the Ubuntu server using password authentication
-ssh tanish-sharma@192.168.125.129
+ssh himanshu-sharma@192.168.125.128
 
 # Commands executed inside the Ubuntu shell after Step 2
 # Display the current username
@@ -42,7 +42,7 @@ chmod 600 ~/.ssh/id_ed25519
 ssh-copy-id -i ~/.ssh/id_ed25519.pub tanish-sharma@192.168.125.129
 
 # Step 9: Test public-key authentication without password fallback
-ssh -o PreferredAuthentications=publickey -o PasswordAuthentication=no tanish-sharma@192.168.125.129
+ssh -o PreferredAuthentications=publickey -o PasswordAuthentication=no himanshu-sharma@192.168.125.128
 
 # Commands executed inside the Ubuntu shell after Step 9
 # Display the current username
@@ -61,7 +61,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 
 # Step 12: Connect to the Ubuntu server again
-ssh tanish-sharma@192.168.125.129
+ssh himanshu-sharma@192.168.125.128
 
 # Exit the SSH session and return to Kali Linux
 exit
