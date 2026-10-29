@@ -96,25 +96,25 @@ The captured packets were identified in Wireshark as **Key (Message 1 of 4)**, *
 
 The first handshake message was selected to inspect the EAPOL-Key fields, including the message number, replay counter, nonce, and key-information fields.
 
-![Step 1: WPA2 handshake message 1](Outputs/step1.png)
+![Step 1: WPA2 handshake message 1](Outputs/step1.jpeg)
 
 #### Message 2 of 4
 
 The second message was examined to identify the client's response, including its nonce and MIC-related fields.
 
-![Step 2: WPA2 handshake message 2](Outputs/step2.png)
+![Step 2: WPA2 handshake message 2](Outputs/step2.jpeg)
 
 #### Message 3 of 4
 
 The third message was inspected to examine the key-information flags, including the Install, Key ACK, and Key MIC indicators shown in the packet details.
 
-![Step 3: WPA2 handshake message 3](Outputs/step3.png)
+![Step 3: WPA2 handshake message 3](Outputs/step3.jpeg)
 
 #### Message 4 of 4
 
 The fourth message was selected to inspect the final handshake exchange and its integrity-related fields.
 
-![Step 4: WPA2 handshake message 4](Outputs/step4.png)
+![Step 4: WPA2 handshake message 4](Outputs/step4.jpeg)
 
 ### Step 5: Analyze the Handshake Messages
 
@@ -139,16 +139,15 @@ The file `Network_Join_Nokia_Mobile.pcap` is included in the `Outputs` folder. I
 
 ---
 
-## Improvement: Authorized Wireless Traffic Decryption
+n
+
+## Improvement: Detection of Deauthentication Attacks in Wireless Networks
 
 ### Description
 
-As an improvement to the basic experiment, Wireshark's wireless decryption settings were configured using the authorized WPA2 network key. The captured wireless traffic was then examined for frames that could be decrypted using the available key and capture information.
+As an improvement to the basic experiment, Wireshark was used to examine wireless management frames and identify deauthentication frames in the captured traffic. These frames were analyzed to understand how wireless devices can be disconnected from an access point.
 
-This extended the analysis beyond identifying the four EAPOL handshake messages and helped demonstrate the relationship between wireless encryption and packet inspection.
-
-Successful decryption depends on the correct key, supported security configuration, and sufficient captured handshake information. Capturing the handshake alone does not automatically decrypt the wireless traffic.
-
+This extended the experiment beyond identifying the four EAPOL handshake messages and helped demonstrate how packet analysis can assist in identifying suspicious wireless activity. It also improved understanding of potential wireless network attacks and the importance of monitoring management frames for security threats.
 ---
 
 ## Files Included
