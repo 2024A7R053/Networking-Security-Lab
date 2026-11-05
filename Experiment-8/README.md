@@ -73,7 +73,7 @@ Mozilla Thunderbird was opened, and the assigned lab email account was configure
 
 The Inbox was accessed to verify that the email account was successfully configured and ready for communication.
 
-![Step 1: Thunderbird email account configuration](Outputs/ss1.png)
+![Step 1: Thunderbird email account configuration](Outputs/Ss1.jpg.jpeg)
 
 ---
 
@@ -85,7 +85,7 @@ This feature helps protect stored account credentials and secret keys by requiri
 
 The configuration was checked without exposing the actual password.
 
-![Step 2: Primary Password configuration](Outputs/ss2.png)
+![Step 2: Primary Password configuration](Outputs/Ss2.jpg.jpeg)
 
 ---
 
@@ -126,7 +126,7 @@ The partner's public key was also received and imported into Thunderbird.
 
 This exchange allowed both users to obtain the public keys required for encrypted communication and digital-signature verification.
 
-![Step 5: Public-key exchange](Outputs/ss5.png)
+![Step 5: Public-key exchange](Outputs/Ss5.jpg.jpeg)
 
 ---
 
@@ -153,7 +153,7 @@ Before sending the message, both security options were enabled:
 
 The email was sent with both encryption and digital signature enabled.
 
-![Step 7: Encrypted and digitally signed email](Outputs/ss7.png)
+![Step 7: Encrypted and digitally signed email](Outputs/Ss7.jpg.jpeg)
 
 ---
 
