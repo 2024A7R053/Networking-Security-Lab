@@ -205,13 +205,13 @@ These files can be imported into compatible OpenPGP applications for public-key 
 
 The `Outputs` folder contains the following screenshots:
 
-- `ss1.png` — Thunderbird email account configuration.
-- `ss2.png` — Primary Password configuration.
+- `ss1.jpg` — Thunderbird email account configuration.
+- `ss2.jpg` — Primary Password configuration.
 - `ss3.png` — OpenPGP key generation and details.
 - `ss4.png` — OpenPGP Key Manager and secret-key backup.
-- `ss5.png` — Public-key exchange.
+- `ss5.jpg` — Public-key exchange.
 - `ss6.png` — Fingerprint verification and public-key acceptance.
-- `ss7.png` — Encrypted and digitally signed email.
+- `ss7.jpg` — Encrypted and digitally signed email.
 - `ss8.png` — Received email, decryption, and signature verification.
 
 ---
