@@ -100,7 +100,7 @@ The generated key pair consisted of:
 
 The generated key's User ID, fingerprint, and expiry date were examined and recorded.
 
-![Step 3: OpenPGP key generation and details](Outputs/ss3.png)
+![Step 3: OpenPGP key generation and details](Outputs/Ss3.jpg.jpeg)
 
 ---
 
