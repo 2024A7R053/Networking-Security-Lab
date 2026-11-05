@@ -114,7 +114,7 @@ The backup operation was confirmed through Thunderbird's key-management interfac
 
 The secret key backup was kept secure and was not included in the public GitHub repository.
 
-![Step 4: OpenPGP Key Manager and secret-key backup](Outputs/ss4.png)
+![Step 4: OpenPGP Key Manager and secret-key backup](Outputs/Ss4.jpg.jpeg)
 
 ---
 
@@ -172,7 +172,7 @@ Thunderbird displayed the following security indicators:
 
 These indicators demonstrated that the message was successfully decrypted and its digital signature was verified.
 
-![Step 8: Received email, decryption and signature verification](Outputs/ss8.png)
+![Step 8: Received email, decryption and signature verification](Outputs/Ss8.jpg.jpeg)
 
 ---
 
