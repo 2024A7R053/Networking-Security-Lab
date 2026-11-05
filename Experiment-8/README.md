@@ -172,7 +172,7 @@ Thunderbird displayed the following security indicators:
 
 These indicators demonstrated that the message was successfully decrypted and its digital signature was verified.
 
-![Step 8: Received email, decryption and signature verification](Outputs/Ss8.jpg.jpeg)
+![Step 8: Received email, decryption and signature verification](Outputs/Ss8.jpg.png)
 
 ---
 
