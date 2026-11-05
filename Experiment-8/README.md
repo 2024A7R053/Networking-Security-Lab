@@ -176,18 +176,17 @@ These indicators demonstrated that the message was successfully decrypted and it
 
 ---
 
-## Improvement: Encrypted and Digitally Signed File Attachment
+## Improvement: Detecting Modified Emails
 
 ### Description
 
-As an improvement to the basic experiment, secure file sharing was demonstrated by creating a confidential text file named `confidential.txt` and attaching it to a new email.
+As an improvement to the basic experiment, email integrity verification was demonstrated by creating and sending a digitally signed email using OpenPGP.
 
-OpenPGP encryption and digital signature options were enabled before sending the email to the communication partner.
+After receiving the email, its content was modified to simulate unauthorized changes.
 
-The recipient decrypted the received email and accessed the protected attachment.
+The recipient verified the digital signature again and observed that the verification failed because the original message had been altered.
 
-This extended the experiment beyond secure email communication and demonstrated how OpenPGP can also protect file sharing through encrypted and digitally signed email attachments.
-
+This extended the experiment beyond secure email communication and demonstrated how OpenPGP helps detect unauthorized modifications and maintain message integrity.
 ---
 
 ## Files Included
