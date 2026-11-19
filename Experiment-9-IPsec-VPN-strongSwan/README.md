@@ -93,9 +93,8 @@ The IPsec Security Association traffic counters are inspected to verify the numb
 
 ![IPsec Traffic Counters](outputs/ss8.png)
 
-## 5. Improvement: IPsec Tunnel Traffic Monitoring
-The IPsec tunnel traffic was monitored using the swanctl utility. The incoming and outgoing packet and byte counters were observed before and after sending ping requests through the VPN tunnel. An increase in the counters confirmed that data was being securely processed and transferred through the IPsec tunnel.
-
+## 5. Improvement – IPsec Tunnel Failure and Recovery Testing
+The IPsec tunnel was temporarily stopped on one gateway to simulate a connection failure. Ping requests between the two gateways were tested during the failure. After restarting the IPsec service, the tunnel was re-established and communication was restored. This improvement demonstrates how IPsec VPN connections can recover after a temporary failure.
 ## 6. Files Included
 
 - [Commands.sh](Codes/Commands.sh): Contains the commands used during the experiment along with their descriptions.
