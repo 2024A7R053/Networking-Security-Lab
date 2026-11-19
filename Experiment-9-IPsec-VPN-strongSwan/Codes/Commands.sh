@@ -257,25 +257,66 @@ ping -I 10.20.1.1 -c 4 10.10.1.1
 sudo swanctl --list-sas
 
 
-# ------------------------------------------------------------
-# 12. OPTIONAL: CAPTURE IPsec NETWORK TRAFFIC
-# ------------------------------------------------------------
-
-# Identify the outer network interface.
-ip -br address
-
-# Replace OUTER_IF with the actual interface name.
-# Capture IKE, NAT-T, ESP and AH traffic.
-sudo tcpdump -ni OUTER_IF -w exp9-ipsec.pcap 'udp port 500 or udp port 4500 or proto 50 or proto 51'
-
-# Stop the capture using Ctrl+C.
-#
-# Wireshark display filter:
-# isakmp || esp || ah
-
 
 # ------------------------------------------------------------
-# 13. CLEANUP (OPTIONAL)
+# 12. IMPROVEMENT: IPsec TUNNEL FAILURE AND RECOVERY TESTING
+# ------------------------------------------------------------
+
+# This test simulates a temporary IPsec tunnel failure
+# and verifies whether communication can be restored.
+
+# STEP 1: Check the current tunnel status.
+# Run on Gateway A:
+
+sudo swanctl --list-sas
+
+# STEP 2: Test communication before stopping the service.
+# Run on Gateway A:
+
+ping -I 10.10.1.1 -c 4 10.20.1.1
+
+# STEP 3: Stop the IPsec service to simulate tunnel failure.
+# Run on Gateway A:
+
+sudo systemctl stop strongswan
+
+# STEP 4: Test communication during the failure.
+# Run on Gateway A:
+
+ping -I 10.10.1.1 -c 4 10.20.1.1
+
+# The ping requests should fail because the IPsec service
+# has been stopped on Gateway A.
+
+# STEP 5: Restart the IPsec service.
+# Run on Gateway A:
+
+sudo systemctl start strongswan
+
+# STEP 6: Load the configuration again if required.
+
+sudo swanctl --load-all
+
+# STEP 7: Re-establish the IPsec CHILD SA.
+
+sudo swanctl --initiate --child lab-net
+
+# STEP 8: Verify that the tunnel is established again.
+
+sudo swanctl --list-sas
+
+# STEP 9: Test communication after recovery.
+
+ping -I 10.10.1.1 -c 4 10.20.1.1
+
+# Expected Result:
+# Before failure: Ping communication works.
+# During failure: Ping communication is interrupted.
+# After recovery: Ping communication is restored.
+
+
+# ------------------------------------------------------------
+# 14. CLEANUP (OPTIONAL)
 # ------------------------------------------------------------
 
 # Terminate the CHILD SA from Gateway A.
@@ -291,3 +332,4 @@ sudo ip address del 10.20.1.1/32 dev lo
 # ------------------------------------------------------------
 # END OF EXPERIMENT 9
 # ------------------------------------------------------------
+
