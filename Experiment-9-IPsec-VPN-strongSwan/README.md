@@ -93,9 +93,8 @@ The IPsec Security Association traffic counters are inspected to verify the numb
 
 ![IPsec Traffic Counters](outputs/ss8.png)
 
-## 5. Improvement
-
-A pre-shared key authentication test was performed by temporarily configuring an incorrect key on one gateway. The authentication attempt failed, and the tunnel was not established. After restoring the correct shared key, the IPsec tunnel was successfully re-established, demonstrating the role of PSK-based peer authentication.
+## 5. Improvement: IPsec Tunnel Traffic Monitoring
+The IPsec tunnel traffic was monitored using the swanctl utility. The incoming and outgoing packet and byte counters were observed before and after sending ping requests through the VPN tunnel. An increase in the counters confirmed that data was being securely processed and transferred through the IPsec tunnel.
 
 ## 6. Files Included
 
