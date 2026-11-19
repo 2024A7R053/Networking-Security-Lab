@@ -13,7 +13,7 @@ This repository contains the laboratory work for the Network Security Lab.
 2. [Experiment 2: Generate SHA-256 Hash and Verify Data Integrity](Experiment-2-SHA256-Data-Integrity/)
 3. [Experiment 3: Simulate User Authentication and Replay Attack Handling Using Challenge-Response Protocol](Experiment-3-Challenge-Response-Authentication/)
 4. [Experiment 4: X.509 Self-Signed Digital Certificate](Experiment-4/)
-5. [Experiment 5](./Experiment-5/README.md)
+5. [Experiment 5 Capture and Analyze TLS Handshake using Wireshark](./Experiment-5/README.md)
 6. [Experiment 6](./Experiment-6/README.md)
 7. [Experiment 7](./Experiment-7/README.md)
 8. [Experiment 8](./Experiment-8/README.md)
